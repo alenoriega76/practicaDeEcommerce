@@ -1,0 +1,137 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: rgb(222, 227, 227);
+}
+.header{
+    padding: 10px;
+    display: flex;
+    width: auto;
+    height: 140px;
+    background-color: rgb(47, 47, 176);
+    align-items: center;
+  
+}
+.logo{
+    margin-left: 10px;
+    width: 230px;
+    height: 100px;
+}
+.logo1{
+    margin-left: 600px;
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+}
+.logo1:hover{
+    width: 40px;
+    height: 40px;
+}
+
+.link{
+    color:white;
+    text-decoration:none;
+}
+.link:hover{
+    background-color: white;
+    color:blue;
+    font-size: 19px;
+    border: solid 1px black;
+    border-radius: 5px;
+    padding: 2.4px;
+}
+li {
+    list-style: none;
+   
+}
+ul{
+    display: flex;
+    gap: 10px;
+    
+}
+.banner img{
+    height: 300px;
+}
+main{
+    width:  auto;
+    height: auto;
+}
+.container{
+   display: flex;
+   flex-wrap: wrap;
+}/*tarjeta producto*/
+.card{
+    background: rgb(176, 183, 209);
+    width: 270px;
+    height: 400px;
+    margin: 10px;
+    padding: 10px;
+}
+.card img{
+    width: 100%;
+    height: 150px;  
+}
+h2{
+    font-size: 20px;
+    text-align: center;
+}
+p{
+    font-size: 14px;
+    text-align: center;
+    color: azure;
+}
+h6{
+    font-size: 22px;
+    text-align: center;
+}
+/* botones*/
+.buy{
+    width: 120px;
+    height: 30px;
+    color: rgb(193, 193, 209);
+    background-color: rgb(9, 2, 62);
+    border-radius: 10px;
+}
+.buy:hover{
+    background-color: azure;
+}/* estilo de contorno de tarjeta*/
+.card:hover{
+    border: 2px solid rgb(7, 63, 248);
+    transform: scale(1.1);
+    border-radius: 10px;
+}
+
+/* pie de pagina*/
+.contenedor_pie{
+    margin-top: 10px;
+    display: flex;
+    background-color: blue;
+    width: 100%;
+    height: 250px;
+}
+.footer{
+     display: flex;   
+     align-items: center;
+}
+.redes{
+    list-style: none;
+    margin-top: 200px;
+    display: flex;
+    gap: 0.5rem;
+} 
+li img{  
+    width: 25px;
+    height: 25px;
+} 
+ div .parafo p{
+    font-size: 12px;
+    
+}
+iframe{
+    width: 250px;
+    height: 180px;
+    margin-top: 10px;
+    padding: 10px;
+}
+

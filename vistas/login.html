@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <link rel="stylesheet" href="../styleLogin.css">
+    </head>
+    <body class="body_login">
+        <header class="header2">
+            <div class="logo">
+                <img class="logo2" src="../img/logitoo2_Capa 1_copy_1.png">
+            </div>
+
+            <nav class="item2">
+                <a href="/"><img class="logo" src="../img/carrito2.svg"></a>
+                <a class="link2" href="../index.html">Home</a>
+                <a class="link2" href="./products.html">Products</a>
+                <a class="link2" href="./singUp.html">Sing up</a>
+            </nav>
+        </header>
+        <main class="principal">
+            <div class="wrapper">
+                <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+                <div class="form">
+                    <h2>Login</h2>
+                    <form action="#">
+                        <div class="input_login">
+                            <span class="icon"><ion-icon name="mail-open"></ion-icon></span>
+                            <input type="email" class="email" id="email"
+                                required>
+                            <label for="email" class="login">Email</label>
+                        </div>
+                        <div class="input_login">
+                            <sapn class="icon"><ion-icon name="lock-closed"></ion-icon></sapn>
+                            <input type="password" class="pass" id="pass"
+                                required>
+                            <label for="pass" class="login">Password</label>
+                        </div>
+                        <div class="reemember">
+                            <label><input type="checkbox">Remember me</label>
+                            <a href="#">Forgot Password</a>
+                        </div>
+                        <button class="btn" type="submit">Login</button>
+                        <div class="login_register">
+                            <p>No tiene cuenta?<a href="#" class="register">Register</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <script type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
