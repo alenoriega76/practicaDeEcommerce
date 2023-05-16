@@ -1,15 +1,25 @@
+/* variables*/
+:root{
+    --colorHeader:#134074;
+    --colorFooter:#0B2545;
+    --coorbackground:#EEF4ED;
+    --cardColor:#8DA9C4;
+    --botonesColor:#133156;
+    --colorlineaCar:rgb(224, 141, 47);
+}
+
 body{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background: rgb(222, 227, 227);
+    background: var(--coorbackground);
 }
 .header{
     padding: 10px;
     display: flex;
     width: auto;
     height: 140px;
-    background-color: rgb(47, 47, 176);
+    background-color: var(--colorHeader);
     align-items: center;
   
 }
@@ -73,7 +83,7 @@ main{
    flex-wrap: wrap;
 }/*tarjeta producto*/
 .card{
-    background: rgb(176, 183, 209);
+    background: var(--cardColor);
     width: 270px;
     height: 400px;
     margin: 10px;
@@ -101,14 +111,15 @@ h6{
     width: 120px;
     height: 30px;
     color: rgb(193, 193, 209);
-    background-color: rgb(9, 2, 62);
+    background-color: var(--botonesColor);
     border-radius: 10px;
 }
 .buy:hover{
-    background-color: azure;
+    background-color:var(--coorbackground);
+    color: var(--colorFooter);
 }/* estilo de contorno de tarjeta*/
 .card:hover{
-    border: 2px solid rgb(7, 63, 248);
+    border: 2px solid rgb(224, 141, 47);
     transform: scale(1.1);
     border-radius: 10px;
 }
@@ -117,7 +128,7 @@ h6{
 .contenedor_pie{
     margin-top: 10px;
     display: flex;
-    background-color: blue;
+    background-color: var(--colorFooter);
     width: 100%;
     height: 250px;
 }
