@@ -1,0 +1,244 @@
+:root{
+    --colorHeader:#134074;
+    --colorFooter:#0B2545;
+    --coorbackground:#EEF4ED;
+    --cardColor:#8DA9C4;
+    --botonesColor:#133156;
+    --colorlineaCar:rgb(224, 141, 47);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+   background-color: var(--coorbackground);
+    
+    }
+.header{
+    padding: 10px;
+    display: flex;
+    width: 100%;
+    height: 140px;
+    background-color: var(--colorHeader);
+    align-items: center;
+    gap: 15px;
+}
+.logo{
+    margin-left: 10px;
+    width: 230px;
+    height: 100px;
+}
+.logo1{
+    margin-left: 600px;
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+}
+.logo1:hover{
+    width: 40px;
+    height: 40px;
+}
+
+.link{
+    color:var(--coorbackground);
+    text-decoration:none;
+}
+.link:hover{
+    background-color: white;
+    color:blue;
+    font-size: 19px;
+    border: solid 1px black;
+    border-radius: 5px;
+    padding: 2.4px;
+}
+li {
+    list-style: none;
+}
+ul{
+    display: flex;
+    gap: 10px;
+}
+h1{
+    text-align: center;
+}
+.banner img{
+    width: 100%;
+    height: 400px;
+}
+.banner p{
+    text-align: center;
+    font-size: 3rem;
+    color: rgb(224, 141, 47);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-shadow: 0 0 8px rgba(0,0,0,8);
+}
+
+.card{
+    position: relative;
+    width: 400px;
+    height: 500px;
+    background: transparent;
+    border: 2px solid rgb(255, 255, 255,.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 400px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: var(--cardColor);
+}
+.card .icon-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: #162938;
+    font-size: 2em ;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    z-index: 1;
+}.form{
+    width: 100%;
+    padding: 40px;
+}
+h2{
+    font-size: 2em;
+    text-align: center;
+    color: #162938;
+
+}
+.input_login{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #162938;
+    margin: 30px 0;
+}
+.input_login label{
+    
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translate(-40%); 
+    font-size: 1em;
+    color: #162938;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;   
+}
+.input_login input:focus~label,
+.input_login input:valid~label{
+    top: -5px;
+
+}
+.input_login input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #162938;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+.input_login .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: #162938;
+    line-height: 57px;
+}
+.reemember{
+    font-size: .9em;
+    color: #162938;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.reemember label input{
+    accent-color: #162938;
+    margin-right: 3px;
+}
+.reemember a{
+    color: #162938;
+    text-decoration: none;
+}
+.reemember p a:hover{
+    text-decoration: underline;
+}
+.btn{
+    width: 100%;
+    height: 45px;
+    background: #162938;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+}
+.login_register{
+    font-size: .9em;
+    color: #162938;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+.login_register p a{
+    color: #162938;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+/* pie de pagina*/
+.contenedor_pie{
+    margin-top: 10px;
+    display: flex;
+    background-color: var(--colorFooter);
+    width: 100%;
+    height: 250px;
+}
+.footer{
+     display: flex;   
+     align-items: center;
+}
+.redes{
+    list-style: none;
+    margin-top: 200px;
+    display: flex;
+    gap: 0.5rem;
+} 
+li img{  
+    width: 25px;
+    height: 25px;
+} 
+ .parrafo p{
+    font-size: 12px;
+    text-align: center;
+    color: var(--coorbackground);
+}
+iframe{
+    width: 250px;
+    height: 180px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
