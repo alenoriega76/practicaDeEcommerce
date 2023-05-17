@@ -1,3 +1,50 @@
+/* Reset de CSS */
+
+/* 1. Reiniciar márgenes y relleno */
+body,
+h1, h2, h3, h4, h5, h6,
+p,
+ul, ol,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. Reiniciar estilos de lista */
+ul, ol {
+  list-style: none;
+}
+
+/* 3. Reiniciar estilos de hipervínculos */
+a {
+  text-decoration: none;
+}
+
+/* 4. Reiniciar estilos de encabezados */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+/* 5. Reiniciar estilos de elementos de formulario */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* 6. Reiniciar bordes y dimensiones de imágenes */
+img {
+  border-style: none;
+  max-width: 100%;
+  height: auto;
+}
+
 /* variables*/
 :root{
     --colorHeader:#134074;
@@ -12,10 +59,10 @@
     padding: 0;
     box-sizing: border-box;
 } 
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Poltawski+Nowy:ital@1&family=Roboto:wght@300&display=swap');
 body{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
     background: var(--coorbackground);
 }
 .header{
@@ -152,11 +199,11 @@ h6{
     gap: 0.5rem;
 } 
 li img{  
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
 } 
  div .parafo p{
-    font-size: 12px;
+    font-size: 11px;
     
 }
 iframe{
@@ -166,3 +213,10 @@ iframe{
     padding: 10px;
 }
 
+
+/* diseño respopnsive*/
+
+@media screen and(min-width:480px) and (max-width:780){
+
+} 
+    

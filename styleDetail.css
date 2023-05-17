@@ -1,3 +1,50 @@
+/* Reset de CSS */
+
+/* 1. Reiniciar márgenes y relleno */
+body,
+h1, h2, h3, h4, h5, h6,
+p,
+ul, ol,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* 2. Reiniciar estilos de lista */
+ul, ol {
+  list-style: none;
+}
+
+/* 3. Reiniciar estilos de hipervínculos */
+a {
+  text-decoration: none;
+}
+
+/* 4. Reiniciar estilos de encabezados */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+/* 5. Reiniciar estilos de elementos de formulario */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* 6. Reiniciar bordes y dimensiones de imágenes */
+img {
+  border-style: none;
+  max-width: 100%;
+  height: auto;
+}
+
 :root{
     --colorHeader:#134074;
     --colorFooter:#0B2545;
@@ -6,15 +53,16 @@
     --botonesColor:#133156;
     --colorlineaCar:rgb(224, 141, 47);
 }
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Poltawski+Nowy:ital@1&family=Roboto:wght@300&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
     background: var(--coorbackground);
 }
 .header{
@@ -106,7 +154,7 @@ main.principal{
 h6{
     text-align: center;
     font-size: 23px;
-    padding: 10px;
+    margin-left: 50px;
    
 }
 .card_detail img{
@@ -116,6 +164,7 @@ h6{
     height: 140px;
     align-items: center;
     border-radius: 5px;
+    padding: 10px;
 }
 p{
     font-size: 14px;
@@ -156,12 +205,12 @@ p{
 
 }
 .redes li img{
-    width: 40px;
-    height:  40px;
+    width: 30px;
+    height:  30px;
     margin-top: 230px;
 }
-.parrafo{
-    font-size: 20px; 
+.parrafo p{
+    font-size: 11px; 
     text-align: center;
     align-items: center;
     padding: 10px;
