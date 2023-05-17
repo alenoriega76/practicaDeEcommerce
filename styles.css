@@ -7,7 +7,11 @@
     --botonesColor:#133156;
     --colorlineaCar:rgb(224, 141, 47);
 }
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
 body{
     margin: 0;
     padding: 0;
@@ -17,11 +21,11 @@ body{
 .header{
     padding: 10px;
     display: flex;
-    width: auto;
+    width: 100%;
     height: 140px;
     background-color: var(--colorHeader);
     align-items: center;
-  
+    gap: 15px;
 }
 .logo{
     margin-left: 10px;
@@ -40,7 +44,7 @@ body{
 }
 
 .link{
-    color:white;
+    color:var(--coorbackground);
     text-decoration:none;
 }
 .link:hover{
@@ -53,12 +57,13 @@ body{
 }
 li {
     list-style: none;
-   
 }
 ul{
     display: flex;
     gap: 10px;
-    
+}
+h1{
+    text-align: center;
 }
 .banner img{
     width: 100%;
