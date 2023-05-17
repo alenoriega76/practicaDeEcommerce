@@ -1,56 +1,89 @@
-/* css del login*/
-
+:root{
+    --colorHeader:#134074;
+    --colorFooter:#0B2545;
+    --coorbackground:#EEF4ED;
+    --cardColor:#8DA9C4;
+    --botonesColor:#133156;
+    --colorlineaCar:rgb(224, 141, 47);
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-.header2{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 30px;
-    justify-content: space-between;
-    align-items: center;
+} 
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+   background-color: var(--coorbackground);
+    
+    }
+.header{
+    padding: 10px;
     display: flex;
-    z-index: 99;
-    margin-bottom: 10px;
-}
-.logo2{
-width: 230px;
-height: 100px;
-
-}
-
-.item2 .link2{
-   position: relative;
-   font-size: 1.1em;
-   color: #fff;
-   text-decoration: none;
-   font-weight: 500;
-   margin-left: 40px;
-}
-
-.img_login{
-    opacity: 0.5;
     width: 100%;
-    height: 100%;
-}
-.body_login{
-    display: flex;
-    justify-content: center;
+    height: 140px;
+    background-color: var(--colorHeader);
     align-items: center;
-    min-height: 100vh;
-    background: url(./img/banner.jpg) no-repeat;
-    background-size: cover;
-    background-position: center center;
-}   
-.wrapper{
+    gap: 15px;
+}
+.logo{
+    margin-left: 10px;
+    width: 230px;
+    height: 100px;
+}
+.logo1{
+    margin-left: 600px;
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+}
+.logo1:hover{
+    width: 40px;
+    height: 40px;
+}
+
+.link{
+    color:var(--coorbackground);
+    text-decoration:none;
+}
+.link:hover{
+    background-color: white;
+    color:blue;
+    font-size: 19px;
+    border: solid 1px black;
+    border-radius: 5px;
+    padding: 2.4px;
+}
+li {
+    list-style: none;
+}
+ul{
+    display: flex;
+    gap: 10px;
+}
+h1{
+    text-align: center;
+}
+.banner img{
+    width: 100%;
+    height: 400px;
+}
+.banner p{
+    text-align: center;
+    font-size: 3rem;
+    color: rgb(224, 141, 47);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-shadow: 0 0 8px rgba(0,0,0,8);
+}
+
+.card{
     position: relative;
     width: 400px;
-    height: 440px;
+    height: 500px;
     background: transparent;
     border: 2px solid rgb(255, 255, 255,.5);
     border-radius: 20px;
@@ -59,9 +92,12 @@ height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 400px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: var(--cardColor);
 }
-
-.wrapper .icon-close{
+.card .icon-close{
     position: absolute;
     top: 0;
     right: 0;
@@ -76,9 +112,7 @@ height: 100px;
     border-bottom-left-radius: 20px;
     border-top-right-radius: 20px;
     z-index: 1;
-}
-
-.form{
+}.form{
     width: 100%;
     padding: 40px;
 }
@@ -172,3 +206,39 @@ h2{
     text-decoration: none;
     font-weight: 600;
 }
+
+
+/* pie de pagina*/
+.contenedor_pie{
+    margin-top: 10px;
+    display: flex;
+    background-color: var(--colorFooter);
+    width: 100%;
+    height: 250px;
+}
+.footer{
+     display: flex;   
+     align-items: center;
+}
+.redes{
+    list-style: none;
+    margin-top: 200px;
+    display: flex;
+    gap: 0.5rem;
+} 
+li img{  
+    width: 25px;
+    height: 25px;
+} 
+ .parrafo p{
+    font-size: 12px;
+    text-align: center;
+    color: var(--coorbackground);
+}
+iframe{
+    width: 250px;
+    height: 180px;
+    margin-top: 10px;
+    padding: 10px;
+}
+

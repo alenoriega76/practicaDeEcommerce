@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sing Up</title>
-    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../styleRegister.css">
 </head>
 <body>
     <header class="header" >
@@ -23,11 +23,45 @@
             </ul>
         </nav>
     </header>
-    <div class="banner">
-        <img src="../img/banner.jpg" width="100%" >
-    </div>
+   
     <main class="principal" >
-
+        <div class="card">
+            <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+            <div class="form">
+                <h2>Login</h2>
+                <form action="#">
+                    <div class="input_login">
+                        <span class="icon"><ion-icon name="person-circle"></ion-icon></ion-icon></span>
+                        <input type="text" class="nombre" id="nombre"
+                            required>
+                        <label for="nombre" class="login">Nombre </label>
+                    </div>
+                    <div class="input_login">
+                        <sapn class="icon"><ion-icon name="person-add"></ion-icon></ion-icon></sapn>
+                        <input type="text" class="usuario" id="usuario"
+                            required>
+                        <label for="usuario" class="login">Usuario</label>
+                    </div>
+                    <div class="input_login">
+                        <sapn class="icon"><ion-icon name="mail-open"></ion-icon></sapn>
+                        <input type="email" class="email" id="email"
+                            required>
+                        <label for="email" class="login">Email</label>
+                    </div>
+                    <div class="input_login">
+                        <sapn class="icon"><ion-icon name="lock-closed"></ion-icon></sapn>
+                        <input type="password" class="pass" id="pass"
+                            required>
+                        <label for="pass" class="login">Password</label>
+                    </div>
+                    <div class="reemember">
+                        <label><input type="checkbox">Remember me</label>
+                        <a href="#">Forgot Password</a>
+                    </div>
+                    <button class="btn" type="submit">Login</button>
+                </form>
+            </div>
+        </div>
     </main>
     <footer class="contenedor_pie">
         <div class="footer">
@@ -51,4 +85,6 @@
         </div>
       </footer>
 </body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </html>
